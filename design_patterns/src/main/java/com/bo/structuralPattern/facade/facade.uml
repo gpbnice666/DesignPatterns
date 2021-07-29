@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.bo.structuralPattern.facade.TeaHouseFacade</OriginalElement>
+  <nodes>
+    <node x="219.37147562582336" y="198.0">com.bo.structuralPattern.facade.TeaHouseFacade</node>
+    <node x="0.0" y="198.0">com.bo.structuralPattern.facade.pojo.Man</node>
+    <node x="327.7608036890646" y="0.0">com.bo.structuralPattern.facade.pojo.Water</node>
+    <node x="339.9090909090909" y="114.0">com.bo.structuralPattern.facade.service.KettleService</node>
+    <node x="96.01554677206849" y="0.0">com.bo.structuralPattern.facade.pojo.TeaLeaf</node>
+    <node x="107.90909090909088" y="114.0">com.bo.structuralPattern.facade.service.TeasetService</node>
+    <node x="108.32602108036883" y="322.0">com.bo.structuralPattern.facade.Clien</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.bo.structuralPattern.facade.Clien" target="com.bo.structuralPattern.facade.pojo.TeaLeaf">
+      <point x="-17.818181818181813" y="-17.0" />
+      <point x="139.50783926218702" y="272.0" />
+      <point x="97.40909090909088" y="272.0" />
+      <point x="97.40909090909088" y="94.0" />
+      <point x="131.4155467720685" y="94.0" />
+      <point x="-23.599999999999994" y="17.0" />
+    </edge>
+    <edge source="com.bo.structuralPattern.facade.TeaHouseFacade" target="com.bo.structuralPattern.facade.service.TeasetService">
+      <point x="-82.25" y="-17.0" />
+      <point x="231.12147562582336" y="178.0" />
+      <point x="219.15909090909088" y="178.0" />
+      <point x="22.25" y="17.0" />
+    </edge>
+    <edge source="com.bo.structuralPattern.facade.Clien" target="com.bo.structuralPattern.facade.service.TeasetService">
+      <point x="0.0" y="-17.0" />
+      <point x="157.32602108036883" y="252.0" />
+      <point x="161.762187088274" y="252.0" />
+      <point x="161.762187088274" y="178.0" />
+      <point x="174.65909090909088" y="178.0" />
+      <point x="-22.25" y="17.0" />
+    </edge>
+    <edge source="com.bo.structuralPattern.facade.service.TeasetService" target="com.bo.structuralPattern.facade.pojo.TeaLeaf">
+      <point x="-44.5" y="-17.0" />
+      <point x="152.40909090909088" y="94.0" />
+      <point x="155.0155467720685" y="94.0" />
+      <point x="0.0" y="17.0" />
+    </edge>
+    <edge source="com.bo.structuralPattern.facade.TeaHouseFacade" target="com.bo.structuralPattern.facade.pojo.TeaLeaf">
+      <point x="-35.25" y="-17.0" />
+      <point x="278.12147562582334" y="178.0" />
+      <point x="296.4090909090909" y="178.0" />
+      <point x="296.4090909090909" y="64.0" />
+      <point x="178.61554677206848" y="64.0" />
+      <point x="23.599999999999994" y="17.0" />
+    </edge>
+    <edge source="com.bo.structuralPattern.facade.TeaHouseFacade" target="com.bo.structuralPattern.facade.service.KettleService">
+      <point x="58.75" y="-17.0" />
+      <point x="372.12147562582334" y="178.0" />
+      <point x="362.1590909090909" y="178.0" />
+      <point x="-66.75" y="17.0" />
+    </edge>
+    <edge source="com.bo.structuralPattern.facade.service.KettleService" target="com.bo.structuralPattern.facade.pojo.Water">
+      <point x="0.0" y="-17.0" />
+      <point x="428.9090909090909" y="94.0" />
+      <point x="384.92747035573126" y="94.0" />
+      <point x="8.166666666666686" y="17.0" />
+    </edge>
+    <edge source="com.bo.structuralPattern.facade.Clien" target="com.bo.structuralPattern.facade.service.KettleService">
+      <point x="26.72727272727272" y="-17.0" />
+      <point x="184.05329380764155" y="282.0" />
+      <point x="478.32602108036883" y="282.0" />
+      <point x="478.32602108036883" y="178.0" />
+      <point x="495.6590909090909" y="178.0" />
+      <point x="66.75" y="17.0" />
+    </edge>
+    <edge source="com.bo.structuralPattern.facade.Clien" target="com.bo.structuralPattern.facade.pojo.Man">
+      <point x="-44.54545454545453" y="-17.0" />
+      <point x="112.7805665349143" y="302.0" />
+      <point x="19.5" y="302.0" />
+      <point x="-19.5" y="17.0" />
+    </edge>
+    <edge source="com.bo.structuralPattern.facade.service.TeasetService" target="com.bo.structuralPattern.facade.pojo.Water">
+      <point x="44.5" y="-17.0" />
+      <point x="241.40909090909088" y="74.0" />
+      <point x="335.92747035573126" y="74.0" />
+      <point x="-40.833333333333314" y="17.0" />
+    </edge>
+    <edge source="com.bo.structuralPattern.facade.TeaHouseFacade" target="com.bo.structuralPattern.facade.pojo.Water">
+      <point x="11.75" y="-17.0" />
+      <point x="325.12147562582334" y="178.0" />
+      <point x="318.4090909090909" y="178.0" />
+      <point x="318.4090909090909" y="84.0" />
+      <point x="352.2608036890646" y="84.0" />
+      <point x="-24.5" y="17.0" />
+    </edge>
+    <edge source="com.bo.structuralPattern.facade.Clien" target="com.bo.structuralPattern.facade.pojo.Water">
+      <point x="44.54545454545453" y="-17.0" />
+      <point x="201.87147562582336" y="302.0" />
+      <point x="537.3181818181818" y="302.0" />
+      <point x="537.3181818181818" y="74.0" />
+      <point x="417.5941370223979" y="74.0" />
+      <point x="40.833333333333314" y="17.0" />
+    </edge>
+    <edge source="com.bo.structuralPattern.facade.Clien" target="com.bo.structuralPattern.facade.TeaHouseFacade">
+      <point x="8.909090909090907" y="-17.0" />
+      <point x="166.23511198945974" y="262.0" />
+      <point x="313.37147562582334" y="262.0" />
+      <point x="0.0" y="17.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="94.0" y="76.0" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

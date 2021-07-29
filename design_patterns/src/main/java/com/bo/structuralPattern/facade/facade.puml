@@ -1,0 +1,42 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+class Man{
+    -String name;
+    +void drink(TeaWater teawater)
+}
+class TeaLeaf{
+ -String teaName;
+}
+class TeaWater{
+    -String teaWater;
+}
+class Water{
+    - int temperature;    // 温度
+    - int capacity;       // 容量
+}
+
+class KettleService{
+    +void waterBurning(String who, Water water, int burnTime);
+}
+class TeaSetService{
+    +TeaWater makeTeaWater(String who, Water water, TeaLeaf teaLeaf);
+}
+class TeaHouseFacade{
+    - String name;
+    - TeaSetService teaSetService;
+    - KettleService kettleService;
+    + TeaWater makeTea(int teaNumber);
+}
+
+Man ..> TeaWater
+KettleService ..> Water
+TeaSetService ..> Water
+TeaSetService ..> TeaLeaf
+
+TeaHouseFacade ..> KettleService
+TeaHouseFacade ..> TeaSetService
+TeaHouseFacade ..> TeaWater
+
+
+@enduml
