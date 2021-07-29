@@ -1,0 +1,28 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+abstract class OrganizationComponent{
+    -String name;
+    -String des;
+    set()
+    get()
+    +{abstract} void print();
+    +void add();
+    +void remove();
+}
+class University{
+-List<OrganizationComponent> organizationComponents;
+}
+class College{
+    -List<OrganizationComponent> organizationComponents;
+}
+class Deparment{
+}
+
+University --|> OrganizationComponent
+College --|> OrganizationComponent
+Deparment --|> OrganizationComponent
+
+University --* College
+College --* Deparment
+@enduml
