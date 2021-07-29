@@ -1,0 +1,37 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+interface Color{
+public void bepaint(String shape);
+}
+abstract class Shape {
+protected Color color;
+protected abstract void draw();
+public void setColor(Color color);
+}
+
+class Circle{}
+class Rectangle{}
+class Square{}
+
+class Black{}
+class Gray{}
+class White{}
+
+class Clien{}
+
+ Circle--|> Shape
+ Rectangle--|> Shape
+ Square--|> Shape
+
+ Black..|> Color
+ Gray..|> Color
+ White..|> Color
+
+
+Color --* Shape
+Shape ..> Color
+
+Clien ..> Shape
+Clien ..> Color
+@enduml
