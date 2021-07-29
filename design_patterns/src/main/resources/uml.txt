@@ -1,0 +1,50 @@
+
+https://www.devdoc.cn/
+www.xuxueli.com
+
+https://www.coursera.org/
+gpbnice@163.com
+18713260809a.
+
+泛化(Generalization)
+	继承的意思	
+符号
+	A类 <|-- B类   b类继承A类
+
+实现(Realization)
+	接口实现
+符号
+	A接口  <|.. B类  b类实现A接口
+
+依赖(Dependency)
+	一个类用到另一个类的对象,一般是指 局部遍历,方法参数,返回值
+符号
+	A <.. B 
+
+关联
+	符号
+		单项关联
+				 -->"N" or "1"-->"N"
+		双向关联
+				-- or "N"<-->"N"
+
+聚合 Aggregation
+	整体和局部可以拆分
+符号
+	o--
+
+组合 Composition
+	一种 强烈的包含关系
+符号
+	*--
+
+- private
+* protected
+~ package private
++ public
+	
+	
+	
+	
+	
+	

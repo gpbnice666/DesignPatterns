@@ -1,0 +1,35 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+
+
+
+interface HuMan
+note top: 人类的总成接口
+
+abstract class AbstractHuManFactory{
+     abstract <T extends HuMan> T createHuMan(Class<T> c);
+}
+note top: 抽象工厂创建人
+
+class HuManFactory extends AbstractHuManFactory{
+}
+note left of HuManFactory: 工厂具体实现,继承(泛化,Generalization,<|--)于AbstractHuManFactory
+
+class Client
+note right: 客户端
+
+
+
+class BlackHuMan  implements HuMan
+class WhiteHuMan implements HuMan
+class YellowHuMan implements HuMan
+
+AbstractHuManFactory ..> HuMan
+HuManFactory ..> HuMan
+Client ..> HuManFactory
+
+
+
+
+@enduml

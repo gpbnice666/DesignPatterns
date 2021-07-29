@@ -1,0 +1,65 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+
+
+interface HuManFactory{
+    HuMan createdYellowHuMan();
+    HuMan createdWhiteHuMan();
+    HuMan createdBlackHuMan();
+}
+note top:抽象工厂的定义
+
+
+class FemaleFeactory{}
+class MaleFactory{}
+
+
+interface HuMan{
+    void getColor();
+    void talk();
+    void getSex();
+}
+note top:定义人的行为
+
+
+
+abstract class AbsBlackHuMan{}
+
+abstract class AbsWhiteHuMan{}
+
+abstract class AbsYellowHuMan{}
+
+class FemaleBlackHuMan{}
+class FemaleWhileHuMan{}
+class FemaleYellowHuMan{}
+
+class MaleBlackHuMan{}
+class MaleWhileHuMan{}
+class MaleYellowHuMan{}
+
+class Client{}
+
+FemaleFeactory..|>HuManFactory
+MaleFactory..|>HuManFactory
+
+HuManFactory  ..> HuMan
+
+Client ..> HuManFactory
+
+AbsBlackHuMan ..|> HuMan
+AbsWhiteHuMan ..|> HuMan
+AbsYellowHuMan ..|> HuMan
+
+FemaleBlackHuMan --|> AbsBlackHuMan
+MaleBlackHuMan --|> AbsBlackHuMan
+
+FemaleWhileHuMan --|> AbsWhiteHuMan
+MaleWhileHuMan --|> AbsWhiteHuMan
+
+FemaleYellowHuMan --|> AbsYellowHuMan
+MaleYellowHuMan --|> AbsYellowHuMan
+
+
+
+@enduml

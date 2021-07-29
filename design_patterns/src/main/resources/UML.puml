@@ -1,0 +1,10 @@
+@startuml
+'https://plantuml.com/class-diagram
+class Dummy {
+  {static} String id /静态
+  {abstract} void methods() // 抽象
+}
+@enduml
+
+
+@enduml

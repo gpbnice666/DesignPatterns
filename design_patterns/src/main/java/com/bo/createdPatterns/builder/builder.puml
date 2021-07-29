@@ -1,0 +1,47 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+abstract class CarBuilder{
+protected abstract void setSequence(ArrayList<String> sequence);
+protected abstract CarModel getCarModel();
+}
+
+abstract class CarModel{
+    private ArrayList<String> sequence = new ArrayList<>();
+    protected abstract void start();
+    protected abstract void stop();
+    protected abstract void alarm();
+    protected abstract void engineBoom();
+    final public void run();
+}
+
+
+class BigGModel{}
+class BMWModel{}
+
+class BigGBuilder{}
+class BMWBuilder{}
+
+class Director{
+private ArrayList<String> sequence = new ArrayList<>();
+private BigGBuilder bigGBuilder = new BigGBuilder();
+private BMWBuilder bmwBuilder = new BMWBuilder();
+public CarModel getBigGModel();
+public CarModel getBMWBuilder();
+}
+
+class Client{}
+
+CarBuilder ..> CarModel
+
+Director ..> CarModel
+Director ..> CarBuilder
+
+BigGBuilder ..|> CarBuilder
+BMWBuilder ..|> CarBuilder
+
+BigGModel ..|> CarModel
+BMWModel ..|> CarModel
+
+Client ..> Director
+@enduml
