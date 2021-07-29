@@ -1,0 +1,42 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+interface HandlerAdapter {
+    public boolean supports(Object handle);
+    public void handle(Object handle);
+}
+
+interface Controller {
+}
+
+class HttpHandlerAdapter{}
+class OtherHandlerAdapter{}
+class SimpleHandlerAdapter{}
+
+class HttpController{}
+class OtherController{}
+class SimpleController{}
+
+class DispatchServlet {
+    public static List<HandlerAdapter> handlerAdapters=new ArrayList<HandlerAdapter>();
+    public void doDispatch();
+    public HandlerAdapter getHandler(Controller controller) ;
+}
+note top : doDispatch 使用的那个controller的子类 getHandler()就把他适配成什么样子
+
+HttpController ..|> Controller
+OtherController ..|> Controller
+SimpleController ..|> Controller
+
+HttpHandlerAdapter ..|> HandlerAdapter
+OtherHandlerAdapter ..|> HandlerAdapter
+SimpleHandlerAdapter ..|> HandlerAdapter
+
+DispatchServlet ..> HandlerAdapter
+DispatchServlet ..> Controller
+
+
+HttpHandlerAdapter ..> HttpController
+OtherHandlerAdapter ..> OtherController
+SimpleHandlerAdapter ..> SimpleController
+@enduml
