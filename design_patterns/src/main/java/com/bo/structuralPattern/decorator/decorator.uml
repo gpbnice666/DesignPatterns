@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.bo.structuralPattern.decorator.decExtends.Mocha</OriginalElement>
+  <nodes>
+    <node x="20.0" y="168.0">com.bo.structuralPattern.decorator.decExtends.Mocha</node>
+    <node x="296.0" y="84.0">com.bo.structuralPattern.decorator.impl.Boss</node>
+    <node x="158.0" y="84.0">com.bo.structuralPattern.decorator.impl.Folgers</node>
+    <node x="0.0" y="84.0">com.bo.structuralPattern.decorator.Decorator</node>
+    <node x="214.5" y="0.0">com.bo.structuralPattern.decorator.Beverage</node>
+    <node x="404.0" y="84.0">com.bo.structuralPattern.decorator.impl.Starbux</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.bo.structuralPattern.decorator.Decorator" target="com.bo.structuralPattern.decorator.Beverage">
+      <point x="0.0" y="-17.0" />
+      <point x="69.0" y="54.0" />
+      <point x="230.5" y="54.0" />
+      <point x="-48.0" y="17.0" />
+    </edge>
+    <edge source="com.bo.structuralPattern.decorator.decExtends.Mocha" target="com.bo.structuralPattern.decorator.Decorator">
+      <point x="0.0" y="-17.0" />
+      <point x="0.0" y="17.0" />
+    </edge>
+    <edge source="com.bo.structuralPattern.decorator.impl.Folgers" target="com.bo.structuralPattern.decorator.Beverage">
+      <point x="0.0" y="-17.0" />
+      <point x="217.0" y="64.0" />
+      <point x="262.5" y="64.0" />
+      <point x="-16.0" y="17.0" />
+    </edge>
+    <edge source="com.bo.structuralPattern.decorator.impl.Boss" target="com.bo.structuralPattern.decorator.Beverage">
+      <point x="0.0" y="-17.0" />
+      <point x="340.0" y="64.0" />
+      <point x="294.5" y="64.0" />
+      <point x="16.0" y="17.0" />
+    </edge>
+    <edge source="com.bo.structuralPattern.decorator.impl.Starbux" target="com.bo.structuralPattern.decorator.Beverage">
+      <point x="0.0" y="-17.0" />
+      <point x="463.0" y="54.0" />
+      <point x="326.5" y="54.0" />
+      <point x="48.0" y="17.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="69.0" y="101.0" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

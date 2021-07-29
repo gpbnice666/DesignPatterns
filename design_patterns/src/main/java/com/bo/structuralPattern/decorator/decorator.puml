@@ -1,0 +1,31 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+
+interface Beverage{
+    +String getDescription();
+    +Double getPrice();
+}
+note top:<b>饮料顶级接口
+
+
+class Decorator implements Beverage{
+}
+
+class Milk  {}
+class Mocha {}
+class Soy {}
+
+class Folgers{}
+class Starbux{}
+class Boss{}
+
+Folgers ..|> Beverage
+Starbux ..|> Beverage
+Boss ..|> Beverage
+
+Milk --|> Decorator
+Mocha --|> Decorator
+Soy --|> Decorator
+
+@enduml
