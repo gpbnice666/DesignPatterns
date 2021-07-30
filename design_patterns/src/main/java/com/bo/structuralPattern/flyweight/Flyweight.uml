@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.bo.structuralPattern.flyweight.Flyweight</OriginalElement>
+  <nodes>
+    <node x="0.0" y="84.0">com.bo.structuralPattern.flyweight.flyweightImpl.ConcreteFlyweight</node>
+    <node x="203.63333333333327" y="252.0">com.bo.structuralPattern.flyweight.Client</node>
+    <node x="185.09444444444443" y="0.0">com.bo.structuralPattern.flyweight.Flyweight</node>
+    <node x="97.66111111111107" y="168.0">com.bo.structuralPattern.flyweight.FlyweightFactory</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.bo.structuralPattern.flyweight.flyweightImpl.ConcreteFlyweight" target="com.bo.structuralPattern.flyweight.Flyweight">
+      <point x="0.0" y="-17.0" />
+      <point x="109.0" y="59.0" />
+      <point x="198.89444444444442" y="59.0" />
+      <point x="-55.20000000000002" y="17.0" />
+    </edge>
+    <edge source="com.bo.structuralPattern.flyweight.Client" target="com.bo.structuralPattern.flyweight.FlyweightFactory">
+      <point x="-36.0" y="-17.0" />
+      <point x="221.63333333333327" y="227.0" />
+      <point x="149.66111111111107" y="227.0" />
+      <point x="-52.0" y="17.0" />
+    </edge>
+    <edge source="com.bo.structuralPattern.flyweight.FlyweightFactory" target="com.bo.structuralPattern.flyweight.flyweightImpl.ConcreteFlyweight">
+      <point x="-77.99999999999997" y="-17.0" />
+      <point x="123.6611111111111" y="148.0" />
+      <point x="109.0" y="148.0" />
+      <point x="0.0" y="17.0" />
+    </edge>
+    <edge source="com.bo.structuralPattern.flyweight.Client" target="com.bo.structuralPattern.flyweight.Flyweight">
+      <point x="36.0" y="-17.0" />
+      <point x="293.63333333333327" y="227.0" />
+      <point x="316.16111111111104" y="227.0" />
+      <point x="316.16111111111104" y="59.0" />
+      <point x="309.2944444444445" y="59.0" />
+      <point x="55.200000000000024" y="17.0" />
+    </edge>
+    <edge source="com.bo.structuralPattern.flyweight.FlyweightFactory" target="com.bo.structuralPattern.flyweight.Flyweight">
+      <point x="78.00000000000003" y="-17.0" />
+      <point x="279.6611111111111" y="148.0" />
+      <point x="265.09444444444443" y="148.0" />
+      <point x="265.09444444444443" y="59.0" />
+      <point x="281.6944444444444" y="59.0" />
+      <point x="27.599999999999994" y="17.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="69.0" y="17.0" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
