@@ -4,7 +4,6 @@
     建造者模式(builder)
     工厂模式(factory)
     原型模式(prototype)
-    模板方法(templateMethod)
 
 
 
@@ -24,7 +23,4 @@
 
 原型模式(prototype):
     用原型实例指定创建对象的种类，并且通过拷贝这个原型来创建新的对象
-
-模板方法(templateMethod):
-    将公共的方法抽取出来,他的具体实现,交给他具体的子类完成不同实现
 
