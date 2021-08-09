@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.bo.behaviourPatterns.observer.Client</OriginalElement>
+  <nodes>
+    <node x="-152.5" y="-1.0">com.bo.behaviourPatterns.observer.Observer</node>
+    <node x="-415.0" y="113.0">com.bo.behaviourPatterns.observer.obsExtends.NBAObserver</node>
+    <node x="-117.14285714285711" y="207.0">com.bo.behaviourPatterns.observer.Client</node>
+    <node x="30.0" y="113.0">com.bo.behaviourPatterns.observer.obsExtends.StockObserver</node>
+    <node x="-126.16666666666663" y="-105.0">com.bo.behaviourPatterns.observer.Subject</node>
+    <node x="-78.0" y="113.0">com.bo.behaviourPatterns.observer.subject.Boss</node>
+    <node x="-237.0" y="113.0">com.bo.behaviourPatterns.observer.subject.Secretary</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.bo.behaviourPatterns.observer.Client" target="com.bo.behaviourPatterns.observer.subject.Secretary">
+      <point x="-27.0" y="-17.0" />
+      <point x="-90.14285714285711" y="177.0" />
+      <point x="-168.0" y="177.0" />
+      <point x="0.0" y="17.0" />
+    </edge>
+    <edge source="com.bo.behaviourPatterns.observer.obsExtends.NBAObserver" target="com.bo.behaviourPatterns.observer.Subject">
+      <point x="-52.66666666666663" y="-17.0" />
+      <point x="-388.66666666666663" y="53.0" />
+      <point x="-326.9662698412698" y="53.0" />
+      <point x="-326.9662698412698" y="-51.0" />
+      <point x="-118.79166666666663" y="-51.0" />
+      <point x="-51.625" y="17.0" />
+    </edge>
+    <edge source="com.bo.behaviourPatterns.observer.Client" target="com.bo.behaviourPatterns.observer.Observer">
+      <point x="-9.0" y="-17.0" />
+      <point x="-72.14285714285711" y="167.0" />
+      <point x="-88.5" y="167.0" />
+      <point x="0.0" y="17.0" />
+    </edge>
+    <edge source="com.bo.behaviourPatterns.observer.Client" target="com.bo.behaviourPatterns.observer.subject.Boss">
+      <point x="9.0" y="-17.0" />
+      <point x="-54.14285714285711" y="167.0" />
+      <point x="-34.0" y="167.0" />
+      <point x="0.0" y="17.0" />
+    </edge>
+    <edge source="com.bo.behaviourPatterns.observer.Subject" target="com.bo.behaviourPatterns.observer.Observer">
+      <point x="7.375" y="17.0" />
+      <point x="-59.79166666666663" y="-21.0" />
+      <point x="-45.833333333333314" y="-21.0" />
+      <point x="42.666666666666686" y="-17.0" />
+    </edge>
+    <edge source="com.bo.behaviourPatterns.observer.obsExtends.StockObserver" target="com.bo.behaviourPatterns.observer.Subject">
+      <point x="59.333333333333314" y="-17.0" />
+      <point x="178.33333333333326" y="93.0" />
+      <point x="141.35119047619048" y="93.0" />
+      <point x="141.35119047619048" y="-41.0" />
+      <point x="-30.29166666666663" y="-41.0" />
+      <point x="36.875" y="17.0" />
+    </edge>
+    <edge source="com.bo.behaviourPatterns.observer.obsExtends.StockObserver" target="com.bo.behaviourPatterns.observer.Observer">
+      <point x="0.0" y="-17.0" />
+      <point x="119.0" y="63.0" />
+      <point x="-31.611111111111086" y="63.0" />
+      <point x="56.888888888888914" y="17.0" />
+    </edge>
+    <edge source="com.bo.behaviourPatterns.observer.Client" target="com.bo.behaviourPatterns.observer.obsExtends.StockObserver">
+      <point x="27.0" y="-17.0" />
+      <point x="-36.14285714285711" y="177.0" />
+      <point x="119.0" y="177.0" />
+      <point x="0.0" y="17.0" />
+    </edge>
+    <edge source="com.bo.behaviourPatterns.observer.subject.Boss" target="com.bo.behaviourPatterns.observer.Observer">
+      <point x="-29.33333333333333" y="-17.0" />
+      <point x="-63.333333333333314" y="93.0" />
+      <point x="-74.27777777777777" y="93.0" />
+      <point x="14.222222222222229" y="17.0" />
+    </edge>
+    <edge source="com.bo.behaviourPatterns.observer.obsExtends.NBAObserver" target="com.bo.behaviourPatterns.observer.Observer">
+      <point x="0.0" y="-17.0" />
+      <point x="-336.0" y="63.0" />
+      <point x="-145.38888888888886" y="63.0" />
+      <point x="-56.888888888888886" y="17.0" />
+    </edge>
+    <edge source="com.bo.behaviourPatterns.observer.Client" target="com.bo.behaviourPatterns.observer.Subject">
+      <point x="45.0" y="-17.0" />
+      <point x="-18.14285714285711" y="187.0" />
+      <point x="218.5" y="187.0" />
+      <point x="218.5" y="-51.0" />
+      <point x="-15.541666666666629" y="-51.0" />
+      <point x="51.625" y="17.0" />
+    </edge>
+    <edge source="com.bo.behaviourPatterns.observer.subject.Secretary" target="com.bo.behaviourPatterns.observer.Observer">
+      <point x="0.0" y="-17.0" />
+      <point x="-168.0" y="83.0" />
+      <point x="-116.94444444444446" y="83.0" />
+      <point x="-28.444444444444457" y="17.0" />
+    </edge>
+    <edge source="com.bo.behaviourPatterns.observer.subject.Boss" target="com.bo.behaviourPatterns.observer.Subject">
+      <point x="29.33333333333333" y="-17.0" />
+      <point x="-4.666666666666686" y="-31.0" />
+      <point x="-45.04166666666663" y="-31.0" />
+      <point x="22.125" y="17.0" />
+    </edge>
+    <edge source="com.bo.behaviourPatterns.observer.subject.Secretary" target="com.bo.behaviourPatterns.observer.Subject">
+      <point x="-46.0" y="-17.0" />
+      <point x="-214.0" y="-41.0" />
+      <point x="-104.04166666666663" y="-41.0" />
+      <point x="-36.875" y="17.0" />
+    </edge>
+    <edge source="com.bo.behaviourPatterns.observer.Client" target="com.bo.behaviourPatterns.observer.obsExtends.NBAObserver">
+      <point x="-45.0" y="-17.0" />
+      <point x="-108.14285714285711" y="187.0" />
+      <point x="-336.0" y="187.0" />
+      <point x="0.0" y="17.0" />
+    </edge>
+    <edge source="com.bo.behaviourPatterns.observer.Observer" target="com.bo.behaviourPatterns.observer.Subject">
+      <point x="0.0" y="-17.0" />
+      <point x="-88.5" y="-21.0" />
+      <point x="-74.54166666666663" y="-21.0" />
+      <point x="-7.375" y="17.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="54.0" y="40.0" />
+  <SelectedNodes />
+  <Categories />
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

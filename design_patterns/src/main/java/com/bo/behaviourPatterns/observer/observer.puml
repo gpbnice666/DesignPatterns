@@ -1,0 +1,32 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+abstract class Observer{
+    + String name;
+    + Subject subject;
+    + Observer(String name,Subject subject);
+    + abstract void update();
+}
+interface Subject{
+    + void attach(Observer observer);
+    + void detach(Observer observer);
+    + void notifyObservers();
+    + void setAction(String action);
+    + String getAction();
+}
+class NBAObserver{}
+class StockObserver{}
+class Boss{}
+class Secretary{}
+class client{}
+
+NBAObserver --|> Observer
+StockObserver --|> Observer
+Boss ..|> Subject
+Secretary ..|> Subject
+Observer ..> Subject
+
+Secretary ..>  Observer
+Boss ..>  Observer
+
+@enduml
