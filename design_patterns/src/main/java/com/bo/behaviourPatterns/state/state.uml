@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.bo.behaviourPatterns.state.Client</OriginalElement>
+  <nodes>
+    <node x="269.0141025641026" y="154.0">com.bo.behaviourPatterns.state.implState.ConcreteStateB</node>
+    <node x="362.8320512820513" y="382.0">com.bo.behaviourPatterns.state.implState.ConcreteStateA</node>
+    <node x="348.3320512820513" y="563.0">com.bo.behaviourPatterns.state.State</node>
+    <node x="217.0" y="263.0">com.bo.behaviourPatterns.state.Context</node>
+    <node x="352.6" y="45.0">com.bo.behaviourPatterns.state.Client</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.bo.behaviourPatterns.state.implState.ConcreteStateA" target="com.bo.behaviourPatterns.state.Context">
+      <point x="47.0" y="29.5" />
+      <point x="141.0" y="307.0" />
+      <point x="177.33205128205128" y="307.0" />
+      <point x="-31.5" y="-65.5" />
+    </edge>
+    <edge source="com.bo.behaviourPatterns.state.implState.ConcreteStateB" target="com.bo.behaviourPatterns.state.Context">
+      <point x="62.66666666666666" y="29.5" />
+      <point x="208.68076923076922" y="317.0" />
+      <point x="198.33205128205128" y="317.0" />
+      <point x="-10.5" y="-65.5" />
+    </edge>
+    <edge source="com.bo.behaviourPatterns.state.implState.ConcreteStateB" target="com.bo.behaviourPatterns.state.State">
+      <point x="0.0" y="-29.5" />
+      <point x="146.01410256410256" y="89.0" />
+      <point x="185.99999999999997" y="89.0" />
+      <point x="-33.60000000000002" y="29.5" />
+    </edge>
+    <edge source="com.bo.behaviourPatterns.state.State" target="com.bo.behaviourPatterns.state.Context">
+      <point x="67.19999999999999" y="29.5" />
+      <point x="286.79999999999995" y="89.0" />
+      <point x="272.51410256410253" y="89.0" />
+      <point x="272.51410256410253" y="317.0" />
+      <point x="261.3320512820513" y="317.0" />
+      <point x="52.5" y="-65.5" />
+    </edge>
+    <edge source="com.bo.behaviourPatterns.state.implState.ConcreteStateA" target="com.bo.behaviourPatterns.state.State">
+      <point x="-62.66666666666666" y="-29.5" />
+      <point x="31.333333333333343" y="193.0" />
+      <point x="41.51410256410253" y="193.0" />
+      <point x="41.51410256410253" y="79.0" />
+      <point x="152.4" y="79.0" />
+      <point x="-67.19999999999999" y="29.5" />
+    </edge>
+    <edge source="com.bo.behaviourPatterns.state.implState.ConcreteStateB" target="com.bo.behaviourPatterns.state.implState.ConcreteStateA">
+      <point x="0.0" y="29.5" />
+      <point x="146.01410256410256" y="193.0" />
+      <point x="156.66666666666666" y="193.0" />
+      <point x="62.66666666666666" y="-29.5" />
+    </edge>
+    <edge source="com.bo.behaviourPatterns.state.Context" target="com.bo.behaviourPatterns.state.State">
+      <point x="10.5" y="-65.5" />
+      <point x="219.33205128205128" y="297.0" />
+      <point x="250.51410256410253" y="297.0" />
+      <point x="250.51410256410253" y="89.0" />
+      <point x="219.6" y="89.0" />
+      <point x="0.0" y="29.5" />
+    </edge>
+    <edge source="com.bo.behaviourPatterns.state.implState.ConcreteStateA" target="com.bo.behaviourPatterns.state.implState.ConcreteStateB">
+      <point x="0.0" y="-29.5" />
+      <point x="94.0" y="193.0" />
+      <point x="83.3474358974359" y="193.0" />
+      <point x="-62.66666666666666" y="29.5" />
+    </edge>
+    <edge source="com.bo.behaviourPatterns.state.Client" target="com.bo.behaviourPatterns.state.Context">
+      <point x="-38.75" y="-29.5" />
+      <point x="170.08205128205128" y="493.0" />
+      <point x="177.33205128205128" y="493.0" />
+      <point x="-31.5" y="65.5" />
+    </edge>
+    <edge source="com.bo.behaviourPatterns.state.Context" target="com.bo.behaviourPatterns.state.implState.ConcreteStateA">
+      <point x="-52.5" y="-65.5" />
+      <point x="156.33205128205128" y="317.0" />
+      <point x="47.0" y="317.0" />
+      <point x="-47.0" y="29.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="152.0" y="288.5" />
+  <SelectedNodes>
+    <node>com.bo.behaviourPatterns.state.implState.ConcreteStateB</node>
+    <node>com.bo.behaviourPatterns.state.implState.ConcreteStateA</node>
+    <node>com.bo.behaviourPatterns.state.State</node>
+    <node>com.bo.behaviourPatterns.state.Context</node>
+    <node>com.bo.behaviourPatterns.state.Client</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
