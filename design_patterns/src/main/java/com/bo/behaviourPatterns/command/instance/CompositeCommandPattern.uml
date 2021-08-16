@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.bo.behaviourPatterns.command.instance.CompositeCommandPattern</OriginalElement>
+  <nodes>
+    <node x="172.07857142857142" y="-143.5">com.bo.behaviourPatterns.command.instance.AbstractCommand</node>
+    <node x="130.99999999999994" y="17.0">com.bo.behaviourPatterns.command.instance.CompositeInvoker</node>
+    <node x="-329.0" y="39.5">com.bo.behaviourPatterns.command.instance.commandImpl.ConcreteCommand1</node>
+    <node x="-99.00000000000006" y="39.5">com.bo.behaviourPatterns.command.instance.commandImpl.ConcreteCommand2</node>
+    <node x="-230.69285714285718" y="-155.0">com.bo.behaviourPatterns.command.instance.CompositeReceiver</node>
+    <node x="59.95765306122445" y="219.0">com.bo.behaviourPatterns.command.instance.CompositeCommandPattern</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.bo.behaviourPatterns.command.instance.commandImpl.ConcreteCommand2" target="com.bo.behaviourPatterns.command.instance.AbstractCommand">
+      <point x="70.0" y="-53.5" />
+      <point x="75.99999999999994" y="-23.0" />
+      <point x="214.50714285714287" y="-23.0" />
+      <point x="-56.57142857142857" y="29.5" />
+    </edge>
+    <edge source="com.bo.behaviourPatterns.command.instance.commandImpl.ConcreteCommand1" target="com.bo.behaviourPatterns.command.instance.AbstractCommand">
+      <point x="70.0" y="-53.5" />
+      <point x="-154.0" y="-33.0" />
+      <point x="186.22142857142853" y="-33.0" />
+      <point x="-84.85714285714286" y="29.5" />
+    </edge>
+    <edge source="com.bo.behaviourPatterns.command.instance.CompositeInvoker" target="com.bo.behaviourPatterns.command.instance.AbstractCommand">
+      <point x="-102.75" y="-76.0" />
+      <point x="165.24999999999994" y="-13.0" />
+      <point x="242.7928571428571" y="-13.0" />
+      <point x="-28.285714285714278" y="29.5" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="38.0" y="61.5" />
+  <SelectedNodes>
+    <node>com.bo.behaviourPatterns.command.instance.CompositeCommandPattern</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Fields</Category>
+    <Category>Constructors</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+    <Category>Inner Classes</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
