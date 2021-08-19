@@ -1,0 +1,19 @@
+server:
+  port: 8080
+spring:
+  application:
+    name: application
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/ok?characterEncoding=utf-8&autoReconnect=true&failOverReadOnly=false&useSSL=false&serverTimezone=GMT%2B8&zeroDateTimeBehavior=convertToNull
+    username: root
+    password: root
+#myBatis-plus
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  mapper-locations: classpath*:mapper/**Mapper.xml
+  type-aliases-package: com.bo.spring.mapper
+logging:
+  level:
+    org.springframework.cloud.sleuth: debug

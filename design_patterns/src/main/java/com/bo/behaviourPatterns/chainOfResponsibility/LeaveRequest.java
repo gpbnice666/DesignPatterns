@@ -4,6 +4,7 @@ import lombok.*;
 
 /**
  * @author gpb
+ * 请假实体
  */
 @Setter
 @Getter
