@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>com.bo.behaviourPatterns.iterator.Client</OriginalElement>
+  <nodes>
+    <node x="252.0" y="190.0">com.bo.behaviourPatterns.iterator.Aggregate</node>
+    <node x="0.0" y="155.0">com.bo.behaviourPatterns.iterator.iteratorImpl.ConcreteIterator</node>
+    <node x="289.05555555555554" y="561.0">com.bo.behaviourPatterns.iterator.Client</node>
+    <node x="121.51388888888886" y="381.0">com.bo.behaviourPatterns.iterator.aggregateImpl.ConcreteAggregate</node>
+    <node x="216.75" y="0.0">com.bo.behaviourPatterns.iterator.Iterator</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="com.bo.behaviourPatterns.iterator.iteratorImpl.ConcreteIterator" target="com.bo.behaviourPatterns.iterator.Iterator">
+      <point x="0.0" y="-88.0" />
+      <point x="115.5" y="130.0" />
+      <point x="236.125" y="130.0" />
+      <point x="-58.125" y="52.5" />
+    </edge>
+    <edge source="com.bo.behaviourPatterns.iterator.aggregateImpl.ConcreteAggregate" target="com.bo.behaviourPatterns.iterator.Aggregate">
+      <point x="72.66666666666671" y="-65.0" />
+      <point x="303.18055555555554" y="356.0" />
+      <point x="293.75" y="356.0" />
+      <point x="-41.75" y="53.0" />
+    </edge>
+    <edge source="com.bo.behaviourPatterns.iterator.Aggregate" target="com.bo.behaviourPatterns.iterator.Iterator">
+      <point x="0.0" y="-53.0" />
+      <point x="335.5" y="130.0" />
+      <point x="313.625" y="130.0" />
+      <point x="19.375" y="52.5" />
+    </edge>
+    <edge source="com.bo.behaviourPatterns.iterator.Client" target="com.bo.behaviourPatterns.iterator.Iterator">
+      <point x="51.666666666666686" y="-29.5" />
+      <point x="418.22222222222223" y="536.0" />
+      <point x="429.5" y="536.0" />
+      <point x="429.5" y="130.0" />
+      <point x="352.375" y="130.0" />
+      <point x="58.125" y="52.5" />
+    </edge>
+    <edge source="com.bo.behaviourPatterns.iterator.aggregateImpl.ConcreteAggregate" target="com.bo.behaviourPatterns.iterator.Iterator">
+      <point x="2.8421709430404007E-14" y="-65.0" />
+      <point x="230.51388888888889" y="356.0" />
+      <point x="241.5" y="356.0" />
+      <point x="241.5" y="130.0" />
+      <point x="274.875" y="130.0" />
+      <point x="-19.375" y="52.5" />
+    </edge>
+    <edge source="com.bo.behaviourPatterns.iterator.Client" target="com.bo.behaviourPatterns.iterator.aggregateImpl.ConcreteAggregate">
+      <point x="-51.66666666666663" y="-29.5" />
+      <point x="314.8888888888889" y="536.0" />
+      <point x="230.51388888888886" y="536.0" />
+      <point x="0.0" y="65.0" />
+    </edge>
+    <edge source="com.bo.behaviourPatterns.iterator.Client" target="com.bo.behaviourPatterns.iterator.Aggregate">
+      <point x="0.0" y="-29.5" />
+      <point x="366.55555555555554" y="536.0" />
+      <point x="377.25" y="536.0" />
+      <point x="41.74999999999999" y="53.0" />
+    </edge>
+    <edge source="com.bo.behaviourPatterns.iterator.aggregateImpl.ConcreteAggregate" target="com.bo.behaviourPatterns.iterator.iteratorImpl.ConcreteIterator">
+      <point x="-72.66666666666666" y="-65.0" />
+      <point x="157.8472222222222" y="356.0" />
+      <point x="115.5" y="356.0" />
+      <point x="0.0" y="88.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic Group" zoom="1.0" x="222.5" y="310.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Inner Classes</Category>
+    <Category>Properties</Category>
+    <Category>Methods</Category>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+
