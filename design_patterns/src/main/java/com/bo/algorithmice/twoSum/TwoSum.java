@@ -38,6 +38,13 @@ public class TwoSum {
         return null;
     }
 
+    public static int[] twoSumPlus(int[] nums, int target) {
+        for (int i = 0; i < nums.length; i++) {
+
+        }
+        return null;
+    }
+
     public static void main(String[] args) {
         int[] nums = new int[]{2,7,11,15,54};
         int target = 65;
