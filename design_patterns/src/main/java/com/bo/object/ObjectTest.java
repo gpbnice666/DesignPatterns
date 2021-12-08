@@ -28,6 +28,7 @@ public class ObjectTest implements Serializable,Cloneable {
         // 也可以通过  Class.forName("全限名"); 获取Class对象
         Class objectTestClass = ObjectTest.class;
         try {
+            // ObjectTest objectTestClass = (ObjectTest)ObjectTest.class.newInstance();
             ObjectTest o = (ObjectTest )objectTestClass.newInstance();
         } catch (InstantiationException e) {
             e.printStackTrace();
