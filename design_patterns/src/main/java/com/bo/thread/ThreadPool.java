@@ -4,6 +4,8 @@ package com.bo.thread;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.BlockingQueue;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
 
 /**
  * @author gpb
@@ -17,6 +19,10 @@ public class ThreadPool {
     List<Thread> threads = new ArrayList<Thread>();
 
     public ThreadPool(int poolSize,BlockingQueue<Runnable> taskQueue){
+
+        ReentrantLock reentrantLock = new ReentrantLock();
+        reentrantLock.lock();
+
         this.taskQueue = taskQueue;
 
         for (int i = 0; i <poolSize; i++) {

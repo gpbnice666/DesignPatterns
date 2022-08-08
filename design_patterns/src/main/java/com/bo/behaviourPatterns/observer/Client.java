@@ -52,7 +52,7 @@ public class Client {
         // 通知者 老板
         Subject boss = new Boss();
         // 观察者 股票
-        Observer stockObserver = new StockObserver("admi", secretary);
+        Observer stockObserver = new StockObserver("admin", secretary);
         // 观察者 NBA
         Observer nbaObserver = new NBAObserver("tom", boss);
         // 前台通知
