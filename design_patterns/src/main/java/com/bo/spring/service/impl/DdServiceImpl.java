@@ -20,11 +20,11 @@ import java.util.Date;
 public class DdServiceImpl extends ServiceImpl<DdMapper, Dd> implements DdService {
 
     @Override
-    public void add() throws Exception {
+    public void add()  {
         Dd dd = new Dd();
         dd.setA("123");
         dd.setAb(new Date());
         this.save(dd);
-        throw new Exception();
+        throw new RuntimeException();
     }
 }

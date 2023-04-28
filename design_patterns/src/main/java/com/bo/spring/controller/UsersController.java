@@ -21,7 +21,7 @@ public class UsersController {
     public void test(){
         try{
             usersService.add();
-            ddService.add();
+           // ddService.add();
         }catch (Throwable throwable){
             System.out.println(throwable.getMessage());
             System.out.println("数据一经回滚g");

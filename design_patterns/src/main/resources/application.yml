@@ -5,9 +5,9 @@ spring:
     name: application
   datasource:
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://127.0.0.1:3306/ok?characterEncoding=utf-8&autoReconnect=true&failOverReadOnly=false&useSSL=false&serverTimezone=GMT%2B8&zeroDateTimeBehavior=convertToNull
+    url: jdbc:mysql://10.0.0.9:13306/klh_reborn?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&serverTimezone=Asia/Shanghai&allowMultiQueries=true
     username: root
-    password: root
+    password: keesaildb
 #myBatis-plus
 mybatis-plus:
   configuration:

@@ -10,10 +10,9 @@ import java.util.Date;
 
 @Data
 @EqualsAndHashCode(callSuper = false)
-@Accessors(chain = true)
 public class Users extends Model<Users> {
 
-private static final long serialVersionUID=1L;
+    private static final long serialVersionUID=1L;
 
     private Integer id;
 
@@ -24,11 +23,5 @@ private static final long serialVersionUID=1L;
     private Integer one;
 
     private Date two;
-
-
-    @Override
-    protected Serializable pkVal() {
-        return this.id;
-    }
 
 }

@@ -14,5 +14,5 @@ import com.bo.spring.pojo.Dd;
  */
 public interface DdService extends IService<Dd> {
 
-    void add() throws Exception;
+    void add() ;
 }
